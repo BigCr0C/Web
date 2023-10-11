@@ -4,7 +4,7 @@
 import requests
 import argparse
 import urllib3
-from colorama import Fore, Style  # Importando módulos do colorama
+from colorama import Fore, Style  
 
 def print_ascii_art():
     ascii_art = """
